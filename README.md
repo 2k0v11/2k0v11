@@ -1,4 +1,4 @@
-![Data Science GIF](https://giphy.com/embed/HUplkVCPY7jTW)
+![Data Science GIF](https://media.giphy.com/media/doXBzUFJRxpaUbuaqz/giphy.gif)
 ### Hi there 👋
 
 <!--
