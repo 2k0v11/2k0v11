@@ -1,4 +1,4 @@
-                             ![Data Science GIF](https://giphy.com/gifs/watson-geekout-HUplkVCPY7jTW/tile)
+![Data Science GIF](<div style="width:100%;height:0;padding-bottom:140%;position:relative;"><iframe src="https://giphy.com/embed/HUplkVCPY7jTW" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/watson-geekout-HUplkVCPY7jTW">via GIPHY</a></p>)
 ### Hi there 👋
 
 <!--
