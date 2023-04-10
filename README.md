@@ -1,6 +1,7 @@
 ![Data Science GIF](https://media.giphy.com/media/doXBzUFJRxpaUbuaqz/giphy.gif)
 ### Hi there 👋
-## My name is Kavya Kartik and I am a Data Science student. I am passionate about using data to gain insights and solve complex problems. As a data science student, I have gained knowledge and skills in areas such as mathematics, statistics, computer programming, and machine learning. I am proficient in programming languages such as Python and R and have experience working with data analysis tools such as SQL and Excel.
+### My name is Kavya Kartik and I am a Data Science student. I am passionate about using data to gain insights and solve complex problems. As a data science student, I have gained knowledge and skills in areas such as mathematics, statistics, computer programming, and machine learning. I am proficient in programming languages such as Python and R and have experience working with data analysis tools such as SQL and Excel.I am also a critical thinker and problem solver. I enjoy working on projects that require me to think creatively and come up with innovative solutions.
+### Overall, I am excited about the opportunities that lie ahead in the field of data science, and I am committed to continuing to learn and grow as a data scientist.
 
 <!--
 **2k0v11/2k0v11** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
