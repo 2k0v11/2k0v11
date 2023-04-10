@@ -2,7 +2,9 @@
 ### Hi there 👋
 ### My name is Kavya Kartik and I am a Data Science student. I am passionate about using data to gain insights and solve complex problems. As a data science student, I have gained knowledge and skills in areas such as mathematics, statistics, computer programming, and machine learning. I am proficient in programming languages such as Python and R and have experience working with data analysis tools such as SQL and Excel.I am also a critical thinker and problem solver. I enjoy working on projects that require me to think creatively and come up with innovative solutions.
 ### Overall, I am excited about the opportunities that lie ahead in the field of data science, and I am committed to continuing to learn and grow as a data scientist.
-
+<a href="https://discord.gg/3x7ChREV"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="discord"></a>
+<a href="mailto:kavyakartik6@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="gmail"></a>
+<a href="https://www.linkedin.com/in/kavya-kartik-734285246/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"></a>
 <!--
 **2k0v11/2k0v11** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
