@@ -6,6 +6,8 @@
 <a href="https://discord.gg/3x7ChREV"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="discord"></a>
 <a href="mailto:kavyakartik6@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="gmail"></a>
 <a href="https://www.linkedin.com/in/kavya-kartik-734285246/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"></a>
+<a href="https://twitter.com/Kavya_Kartik_"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="twitter"></a>
+
 <!--
 **2k0v11/2k0v11** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
