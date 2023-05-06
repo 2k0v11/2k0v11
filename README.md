@@ -3,10 +3,7 @@
 ### My name is Kavya Kartik and I am a Data Science student. I am passionate about using data to gain insights and solve complex problems. As a data science student, I have gained knowledge and skills in areas such as mathematics, statistics, computer programming, and machine learning. I am proficient in programming languages such as Python and R and have experience working with data analysis tools such as SQL and Excel.I am also a critical thinker and problem solver. I enjoy working on projects that require me to think creatively and come up with innovative solutions.
 ### Overall, I am excited about the opportunities that lie ahead in the field of data science, and I am committed to continuing to learn and grow as a data scientist.
 
-<a href="https://discord.gg/3x7ChREV"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="discord"></a>
-<a href="mailto:kavyakartik6@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="gmail"></a>
-<a href="https://www.linkedin.com/in/kavya-kartik-734285246/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"></a>
-<a href="https://twitter.com/Kavya_Kartik_"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="twitter"></a>
+
 
 ## 🌐 Socials:
 [![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/https://discord.gg/xaxHczWh) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/Kavya_kartik_) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/kavya-kartik-734285246/) [![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?logo=stack-overflow&logoColor=white)](https://stackoverflow.com/users/21784437) [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white)](https://twitter.com/@Kavya_Kartik_) 
