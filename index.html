@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kartik — Writer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1B2430;
+    --ink-deep:#141B24;
+    --paper:#F7F3E8;
+    --paper-dim:#EFE9D8;
+    --gold:#C9A24B;
+    --slate:#8B93A1;
+    --offwhite:#FAFAF7;
+    --rule: rgba(247,243,232,0.14);
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+
+  html{scroll-behavior:smooth;}
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;}
+  }
+
+  body{
+    background:var(--ink);
+    color:var(--offwhite);
+    font-family:'Inter', sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{color:inherit;}
+  a:focus-visible, button:focus-visible{
+    outline:2px solid var(--gold);
+    outline-offset:3px;
+  }
+
+  .wrap{
+    max-width:920px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+
+  /* ---------- MASTHEAD ---------- */
+  .masthead{
+    border-bottom:1px solid var(--rule);
+    padding:56px 0 28px;
+  }
+  .masthead-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    flex-wrap:wrap;
+    gap:12px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--slate);
+    margin-bottom:22px;
+  }
+  .masthead h1{
+    font-family:'Lora', serif;
+    font-weight:700;
+    font-size:clamp(40px, 7vw, 68px);
+    letter-spacing:-0.01em;
+    color:var(--offwhite);
+  }
+  .masthead .role{
+    font-family:'Lora', serif;
+    font-style:italic;
+    font-weight:500;
+    font-size:19px;
+    color:var(--gold);
+    margin-top:6px;
+  }
+
+  /* ---------- ABOUT ---------- */
+  .about{
+    padding:40px 0 48px;
+    border-bottom:1px solid var(--rule);
+  }
+  .about p{
+    font-size:17px;
+    color:#DCE0E6;
+    max-width:640px;
+  }
+  .about .beats{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:22px;
+  }
+  .beats span{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11.5px;
+    letter-spacing:0.05em;
+    text-transform:uppercase;
+    color:var(--gold);
+    border:1px solid rgba(201,162,75,0.4);
+    padding:5px 11px;
+    border-radius:2px;
+  }
+
+  /* ---------- SECTION LABEL ---------- */
+  .section-label{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--slate);
+    padding-top:44px;
+    margin-bottom:20px;
+    display:flex;
+    align-items:center;
+    gap:14px;
+  }
+  .section-label::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:var(--rule);
+  }
+
+  /* ---------- CLIPS (signature element: press-index entries) ---------- */
+  .clips{
+    padding-bottom:20px;
+  }
+  .clip{
+    background:var(--paper);
+    color:var(--ink);
+    border-radius:3px;
+    padding:26px 30px;
+    margin-bottom:18px;
+    position:relative;
+    overflow:hidden;
+    transition:transform 0.18s ease, box-shadow 0.18s ease;
+  }
+  .clip::before{
+    content:"";
+    position:absolute;
+    left:0; top:0; bottom:0;
+    width:4px;
+    background:var(--gold);
+  }
+  .clip:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.35);
+  }
+  .clip-dateline{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11.5px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:#7A6A3F;
+    margin-bottom:10px;
+  }
+  .clip-dateline b{ color:var(--ink); }
+  .clip h3{
+    font-family:'Lora', serif;
+    font-weight:600;
+    font-size:23px;
+    line-height:1.3;
+    margin-bottom:10px;
+  }
+  .clip h3 a{
+    text-decoration:none;
+    border-bottom:1px solid transparent;
+  }
+  .clip h3 a:hover{
+    border-bottom-color:var(--ink);
+  }
+  .clip .dek{
+    font-size:15px;
+    color:#3D4551;
+    margin-bottom:14px;
+    max-width:600px;
+  }
+  .clip .pull{
+    font-family:'Lora', serif;
+    font-style:italic;
+    font-size:15px;
+    color:#5A4E2E;
+    border-left:2px solid var(--gold);
+    padding-left:14px;
+  }
+  .clip-link{
+    display:inline-block;
+    margin-top:16px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:0.04em;
+    text-decoration:none;
+    color:var(--ink);
+    border-bottom:1px solid var(--ink);
+    padding-bottom:2px;
+  }
+  .clip-link:hover{ color:#7A6A3F; border-color:#7A6A3F; }
+
+  /* ---------- RESUME / CONTACT ---------- */
+  .lower{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:28px;
+    padding:44px 0 60px;
+  }
+  @media (max-width:620px){
+    .lower{grid-template-columns:1fr;}
+  }
+  .box{
+    border:1px solid var(--rule);
+    border-radius:3px;
+    padding:26px;
+  }
+  .box h4{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--gold);
+    margin-bottom:14px;
+  }
+  .box p{ font-size:14.5px; color:#C7CCD4; margin-bottom:14px;}
+  .box a.cta{
+    display:inline-block;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    color:var(--ink);
+    background:var(--gold);
+    padding:9px 16px;
+    border-radius:2px;
+    text-decoration:none;
+  }
+  .contact-list{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .contact-list a{
+    text-decoration:none;
+    font-size:14.5px;
+    border-bottom:1px solid var(--rule);
+    padding-bottom:2px;
+  }
+  .contact-list a:hover{ color:var(--gold); }
+
+  footer{
+    border-top:1px solid var(--rule);
+    padding:24px 0 40px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11.5px;
+    color:var(--slate);
+    text-align:center;
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="masthead-top">
+      <span>Vol. 1 — Est. 2026</span>
+      <span id="today"></span>
+    </div>
+    <h1>Kartik</h1>
+    <div class="role">Associate Writer</div>
+  </header>
+
+  <section class="about">
+    <p>
+      I write reported features and essays at the intersection of [your beat — e.g. technology and culture].
+      Byline in [Publication A], [Publication B], and [Publication C]. Currently an associate writer
+      at [Current Publication], where I cover [topic].
+    </p>
+    <div class="beats">
+      <span>Reporting</span>
+      <span>Essays</span>
+      <span>Interviews</span>
+    </div>
+  </section>
+
+  <div class="section-label">Selected Clips</div>
+
+  <section class="clips">
+
+    <article class="clip">
+      <div class="clip-dateline"><b>Publication Name</b> — Month 2026</div>
+      <h3><a href="#">Headline of Your Published Piece Goes Here</a></h3>
+      <p class="dek">One or two sentences describing what the piece is about and why it matters — the same way a magazine dek would frame it for a reader.</p>
+      <p class="pull">"A short pull-quote from the piece that captures your voice."</p>
+      <a class="clip-link" href="#" target="_blank" rel="noopener">Read the piece →</a>
+    </article>
+
+    <article class="clip">
+      <div class="clip-dateline"><b>Publication Name</b> — Month 2026</div>
+      <h3><a href="#">Another Clip Headline</a></h3>
+      <p class="dek">Short description of the story, the reporting behind it, or the angle you took.</p>
+      <p class="pull">"Another representative line from the piece."</p>
+      <a class="clip-link" href="#" target="_blank" rel="noopener">Read the piece →</a>
+    </article>
+
+    <article class="clip">
+      <div class="clip-dateline"><b>Publication Name</b> — Month 2026</div>
+      <h3><a href="#">Third Clip Headline</a></h3>
+      <p class="dek">Short description of the story here.</p>
+      <p class="pull">"A third pull-quote."</p>
+      <a class="clip-link" href="#" target="_blank" rel="noopener">Read the piece →</a>
+    </article>
+
+  </section>
+
+  <div class="lower">
+    <div class="box">
+      <h4>Resume</h4>
+      <p>Download a full CV including education, past newsrooms, and awards.</p>
+      <a class="cta" href="resume.pdf" target="_blank" rel="noopener">Download PDF</a>
+    </div>
+    <div class="box">
+      <h4>Get in touch</h4>
+      <ul class="contact-list">
+        <li><a href="mailto:youremail@example.com">youremail@example.com</a></li>
+        <li><a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://twitter.com/yourhandle" target="_blank" rel="noopener">Twitter / X</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    © <span id="year"></span> Kartik. Built and hosted on GitHub Pages.
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('today').textContent = new Date().toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'});
+</script>
+
+</body>
+</html>
